@@ -19,7 +19,7 @@ const PopupController = () => {
           setIsPopupOpen(true);
           setHasPopupShown(true);
         }
-      }, 5000); // 5 seconds delay
+      }, 10000);
 
       return () => clearTimeout(timer);
     }
