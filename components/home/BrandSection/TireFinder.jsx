@@ -5,8 +5,8 @@ import React from "react";
 // It simply renders a placeholder div that TireConnect will fill
 const TireFinderSection = () => {
   return (
-    <div className="w-full py-16 bg-white">
-      <div className="container mx-auto px-4 max-w-[1440px]">
+    <div className="py-16 px-4 md:px-9 lg:px-20 bg-white">
+      <div className="container mx-auto max-w-[1440px]">
         {/* Section Header */}
         <div className="mb-12">
           <div className="flex items-center mb-4">
