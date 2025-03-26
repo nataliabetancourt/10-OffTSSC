@@ -55,8 +55,12 @@ const PopupForm = ({ isOpen, onClose, openFromButton }) => {
       errors.email = "Email is invalid";
     }
 
+    // Phone number validation
+    const phoneRegex = /^[0-9]{10}$/; // Assumes 10-digit phone number
     if (!formData.phone.trim()) {
       errors.phone = "Phone number is required";
+    } else if (!phoneRegex.test(formData.phone.replace(/\D/g, ""))) {
+      errors.phone = "Please enter a valid 10-digit phone number";
     }
 
     if (!formData.consent) {
@@ -200,7 +204,7 @@ const PopupForm = ({ isOpen, onClose, openFromButton }) => {
                 type="tel"
                 id="phone"
                 name="phone"
-                placeholder="Ej. Doe"
+                placeholder="Ej. 111-222-3333"
                 value={formData.phone}
                 onChange={handleChange}
                 className={`w-full p-3 rounded bg-gray-100 text-gray-800 ${
