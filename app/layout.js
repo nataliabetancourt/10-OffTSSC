@@ -44,22 +44,6 @@ export default function Layout({ children }) {
   return (
     <html lang="es">
       <head>
-        {/* Google tag (gtag.js) */}
-        <script
-          async
-          src="https://www.googletagmanager.com/gtag/js?id=G-LZP1LJFX0B"
-        />
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-              window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
-              gtag('js', new Date());
-              gtag('config', 'G-LZP1LJFX0B');
-            `,
-          }}
-        />
-
         {/* Google Tag Manager */}
         <script
           dangerouslySetInnerHTML={{
