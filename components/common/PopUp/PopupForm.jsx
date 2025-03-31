@@ -105,11 +105,11 @@ const PopupForm = ({ isOpen, onClose, openFromButton }) => {
             consent: false,
           });
 
-          // Auto close after 3 seconds on success
+          // Auto close after 6 seconds on success
           setTimeout(() => {
             onClose();
             setSubmitSuccess(false);
-          }, 3000);
+          }, 6000);
         } else {
           throw new Error("Form submission failed");
         }
