@@ -143,7 +143,10 @@ const PopupForm = ({ isOpen, onClose, openFromButton }) => {
             <p className="mb-4">
               Your 10% discount has been sent to your email.
             </p>
-            <p>Please check your inbox for details.</p>
+            <p>
+              Please check your inbox for details. If it's not in your inbox,
+              check your spam.
+            </p>
           </div>
         ) : (
           <form onSubmit={handleSubmit} className="p-8">
